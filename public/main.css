@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    background-color: rgb(202, 74, 74);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .link {
+    text-transform: uppercase;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 10px;
+}
+
+nav .link:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 74, 74);
+    cursor: pointer;
+}   
+
+#main-display {
+    background-color: sienna;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+#main-display .todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(202, 74, 74);
+    color: white;
+}
+
+.todo h3:hover {
+    color:violet;
+    cursor: pointer;
+}
+
+#forms {
+    background-color: rgb(202, 74, 74);
+    text-align: center;
+
+    & input, & button {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        color: rgb(202, 74, 74)
+    } 
+}
